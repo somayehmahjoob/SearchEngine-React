@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+:root {
+  --color-body: #e7e6e1;
+  --font-normal: normal normal normal 14px/1.4em "Montserrat", sans-serif;
+  --font-bold: normal normal bold 16px/1.4em "Montserrat", sans-serif;
+  --font-big: normal normal bold 50px/2em "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: var(--color-body);
+  font: var(--font-normal);
+}
+input:hover,
+input:focus {
+  outline: none;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
+  margin: 20px auto;
+}
+span {
+  color: #537791;
+}
+ul {
+  list-style: none;
+  margin: 20px;
+  font-weight: 600;
+}
+.container {
+  margin: 50px auto;
+  background: #fff;
+  max-width: 600px;
+  box-shadow: 2px 2px 5px rgb(90, 89, 89, 0.5);
+  border-radius: 20px;
+  padding: 20px;
+}
+.search-form {
+  margin-bottom: 20px;
+}
+.search-form .search-input {
+  width: 80%;
+  /* font: var(--font-normal); */
+  padding: 10px;
+  border: 1px solid #d6d7db;
+  border-radius: 10px;
+}
+.search-form .search-submit {
+  margin-left: 10px;
+  background: #537791;
+  color: #f7f6e7;
+  padding: 9px 20px;
+  border-radius: 10px;
+  border: none;
+  line-height: 1.4em;
+  box-shadow: 2px 2px 2px rgb(83, 119, 145, 0.5);
+  transition: all 200ms ease-out;
+}
+.search-form .search-submit:hover {
+  color: #537791;
+  background: #f7f6e7;
+  border: #537791;
+}
+.iconWeather,
+.info {
+  display: inline-block;
+}
+.iconWeather {
+  float: right;
+  margin-right: 20px;
+}
