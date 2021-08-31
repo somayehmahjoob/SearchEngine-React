@@ -13,6 +13,7 @@ function SearchEngine() {
     //console.log(response.data);
     setDisplay(true);
     setTemperatureDetails({
+      name: response.data.list[0].name,
       temp: response.data.list[0].main.temp,
       speed: response.data.list[0].wind.speed,
       des: response.data.list[0].weather[0].description,
@@ -55,7 +56,7 @@ function SearchEngine() {
         <div className="search-form">{form}</div>
         <div className="row">
           <h3>
-            Search for <span>{city}</span>
+            City: <span>{temperatureDetails.name}</span>
           </h3>
           <div className="info">
             <ul>
